@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Santa Claus</title>
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <audio controls loop autoplay id="myAudio" hidden="true">
+        <source src= "jingle_bell.mp3" type="audio/mpeg">
+      </audio>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark  " style="position:fixed;z-index:1; width:100%;top:0 ">
+        <a class="navbar-brand" href="#">Santa Claus</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bordeer4pa"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown" >
+          <ul class="navbar-nav ml-auto"  >
+            <li class="nav-item active bordeer4pa">
+                <a class="nav-link" href="#" onclick="play()">Play Audio</a>
+              </li>
+            <li>
+              <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#xmas">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gift">GIFT!</a>
+            </li>
+              
+          </ul>
+        </div>
+      </nav>
+      <section  class="text-white">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-text " style="margin-left:3em" >
+                <div class="Aligner-item content bordeeer"style="margin-top:10em;">
+                  <h4 style="color:ivory;font-size: 500%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Hi There! This is Santa! <br>See what I brought for You!</h4>
+                </div>
+              </div>
+
+              <!-- <div class="col-12 col-sm-6 col-md-3 col-text " style="margin-left:25em" >
+                <div class="Aligner-item content bordeeer"style="margin-top:0em;">
+                  <h4 style="color: white;font-size: 500%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></h4>
+                </div>
+              </div> -->
+        </div>
+        
+
+      </section>
+
+
+
+
+      <div class="card mb-3" id="xmas">
+        <img class="card-img-top" src="https://wallpapercave.com/wp/pVr1M7D.jpg" alt="Christmas Jesus Image">
+        <div class="card-body">
+          <h2 class="card-title">It's Christmas Time!</h2>
+          <p class="card-text">Christmas is a holiday that commemorates the birth of Jesus Christ. It is typically celebrated on December 25th. The holiday has its roots in ancient Rome and has been influenced by various traditions over time. Santa Claus, also known as St. Nicholas or Kris Kringle, is a beloved figure associated with Christmas who is based on a real person known for his kindness and generosity. The modern-day image of Santa Claus was popularized in the 19th century through literature and advertising.</p>
+          <p class="card-text"><small class="text-muted">Scroll down to get the gift!</small></p>
+        </div>
+      </div>
+
+
+
+      <div class="card" id="gift">
+        <div class="card-body">
+          <h5 class="card-title">Get Your Gift, It's Easy!</h5>
+          <p class="card-text">Just go to <a href="https://ashwinv007.github.io/WAREGRAM-WEBSITE/index.html" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">WAREGRAM</a> and check the Christmas Section for your Gift!</p>
+          <p class="card-text"><small class="text-muted">ENJOY!</small></p>
+        </div>
+        <img class="card-img-bottom" src="https://media.licdn.com/dms/image/C5622AQHmGSxCy_tb1w/feedshare-shrink_800/0/1671208778528?e=1674086400&v=beta&t=sSiufWz9ULisJoJgAYU5h35A4wLc8Zz4vdq4m1yHQn0" alt="Card image cap">
+      </div>
+
+      <footer >
+        <div class="container" >
+          <p>© 2022 Copyright Waregram. <br> All Rights Reserved. Designed by <a href="https://ashwinv007.github.io/WAREGRAM-WEBSITE/"> Waregram</a></p>
+        </div>
+      </footer>
+
+
+
+
+      
+
+    <script>
+        function play() {
+        // setInterval(function(){
+        // document.getElementById("button_id").click();	
+        // }, 3000);
+        var audio = document.getElementById("audio");
+        audio.play();
+        }
+        
+    </script>
+
+   
+    <audio id="audio" src="jingle_bell.mp3"></audio>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
